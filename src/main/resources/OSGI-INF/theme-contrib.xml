@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.sample.session-expiry">
+  <require>org.nuxeo.theme.nuxeo.webapp</require>
+  <extension target="org.nuxeo.ecm.platform.WebResources" point="resources">
+    <resource name="session-expiry.js" target="head">
+      <uri>/scripts/session-expiry.js</uri>
+    </resource>
+  </extension>
+  <extension target="org.nuxeo.ecm.platform.WebResources" point="bundles">
+    <bundle name="nuxeo_includes">
+      <resources append="true">
+        <resource>session-expiry.js</resource>
+      </resources>
+    </bundle>
+  </extension>
+</component>
